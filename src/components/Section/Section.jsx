@@ -1,21 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {
-  SectionTitle,
-  } from './Section.styled';
+import { SectionTitle } from './Section.styled';
 
 export const Section = ({ title, children }) => {
   return (
-      <>
-        <SectionTitle>{title}</SectionTitle>
-        {children}
-      </>
-     );
+    <>
+      <SectionTitle>{title}</SectionTitle>
+      {children}
+    </>
+  );
 };
-
 
 Section.propTypes = {
   title: PropTypes.string,
   children: PropTypes.object,
 };
-
