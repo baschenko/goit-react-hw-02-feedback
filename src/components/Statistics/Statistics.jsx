@@ -9,16 +9,15 @@ export const Statistics = ({
   total,
   positivePercentage,
 }) => {
-     return (
-      <StatisticsList>
-        <StatisticsItem>Good: {good}</StatisticsItem>
-        <StatisticsItem>Neutral: {neutral}</StatisticsItem>
-        <StatisticsItem>Bad: {bad} </StatisticsItem>
-        <StatisticsItem>Total: {total}</StatisticsItem>
-        <StatisticsItem>Positive feedback: {positivePercentage}%</StatisticsItem>
-      </StatisticsList>
-    );
-  
+  return (
+    <StatisticsList>
+      <StatisticsItem>Good: {good}</StatisticsItem>
+      <StatisticsItem>Neutral: {neutral}</StatisticsItem>
+      <StatisticsItem>Bad: {bad} </StatisticsItem>
+      <StatisticsItem>Total: {total}</StatisticsItem>
+      <StatisticsItem>Positive feedback: {positivePercentage}%</StatisticsItem>
+    </StatisticsList>
+  );
 };
 
 Statistics.propTypes = {
@@ -26,4 +25,5 @@ Statistics.propTypes = {
   neutral: PropTypes.number,
   bad: PropTypes.number,
   total: PropTypes.number,
-  positivePercentage: PropTypes.number};
+  positivePercentage: PropTypes.number,
+};
